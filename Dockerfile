@@ -12,8 +12,9 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 # and additional apt packages
 RUN apt-get update \
-    && apt-get install -qqy screen \
+    && apt-get install -qqy screen curl \
     && rm -rf /var/lib/apt/lists
+
 
 # Copy the rest of the project code into the container
 COPY . . 
