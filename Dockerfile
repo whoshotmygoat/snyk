@@ -1,5 +1,5 @@
 # Build image from Python SDK
-FROM python:3.9-slim-buster
+FROM python:3.11.0a5-slim-bullseye
 
 # The image build will operate from the /myproject directory
 WORKDIR /myproject
